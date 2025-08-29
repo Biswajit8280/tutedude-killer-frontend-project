@@ -4,13 +4,14 @@
     box-sizing: border-box;
 }
 
-html {
+html,body {
     background-color: #fff;
     color: #555;
-    font-family: sans-serif;
+    font-family: Lato, sans-serif;
     font-weight: 300;
     font-size: 20px;
     text-rendering: optimizeLegibility;
+    overflow-x: hidden;
 }
 
 
@@ -101,6 +102,7 @@ nav {
     float: left;
     margin-top: 20px;
     margin-left: 20px;
+    border-radius: 50px;
 }
 
 .main-nav {
@@ -385,9 +387,13 @@ blockquote:before {
     top: 0;
     left: -3px;
 }
+.section-form,.section-plan{
+    
+    background-color: #f4f4f4;
+}
 
 .section-plan {
-    background-color: #f8f8f8;
+    /* background-color: #f8f8f8; */
 
 }
 
@@ -452,3 +458,61 @@ textarea{
 input[type=checkbox]{
     margin: 10px 5px 10px 0;
 }
+
+footer{
+    background-color: #333;
+    font-size: 80%;
+    padding: 50px;
+}
+.footer-nav{
+    list-style: none;
+    display: flex;
+}
+.social-links{
+    list-style: none;
+    float: right;
+}
+.footer-nav li, .social-links li{
+    display: inline-block;
+    margin-right: 20px;
+}
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited{
+    text-decoration: none;
+    border: 0;
+    color: #888;
+}
+.footer-nav li a:hover,
+.footer-nav li a:hover{
+    color: #ddd;
+}
+footer p{
+    color: #888;
+    text-align: center;
+    font-size: 90%;
+    margin-top: 20px;
+}
+.fb:hover{
+    color: #3b5958;
+
+}
+.google:hover{
+    color: #dd4d39;
+}
+.twitter:hover{
+    color: #00aced;
+}
+.insta:hover{
+    color:#fe5608
+}
+.social-links li a:link,
+.social-links li a:visited{
+    font-size: 160%;
+}
+
+
+
+ /* resposive design  */
+

@@ -3,8 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Food Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="vendor/css/grid.css">
     <link rel="stylesheet" href="vendor/css/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,10 +25,10 @@
                     src="https://imgs.search.brave.com/wEMjszlecTgW4xspn8Vc1TLDeUlfZuDABMyReNf_SZQ/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS12ZWN0b3Iv/aGFuZC1kcmF3bi1o/ZWFsdGh5LWZvb2Qt/bG9nby10ZW1wbGF0/ZV8yMy0yMTQ5NjQx/MjQ0LmpwZz9zZW10/PWFpc19oeWJyaWQm/dz03NDAmcT04MA"
                     alt="logo-image">
                 <ul class="main-nav">
-                    <li><a href="#">food delivery</a></li>
-                    <li><a href="#">how it works</a></li>
-                    <li><a href="#">our cities</a></li>
-                    <li><a href="#">Sign-Up</a></li>
+                    <li><a href="#feature">food delivery</a></li>
+                    <li><a href="#hiw">how it works</a></li>
+                    <li><a href="#city">our cities</a></li>
+                    <li><a href="#signup">Sign-Up</a></li>
                 </ul>
             </div>
 
@@ -36,15 +38,15 @@
             <h1>GoodBye Junk foods</h1>
             <h1>Welcome To Healthy Food</h1>
             <div class="botton-container">
-                <a class="btn btn-full" href="#">I'm Hungry.</a>
-                <a class="btn btn-ghost" href="#">show me the more options.</a>
+                <a class="btn btn-full" href="#plans">I'm Hungry.</a>
+                <a class="btn btn-ghost" href="#feature">show me the more options.</a>
             </div>
 
         </div>
     </header>
 
 
-    <section class="section-features">
+    <section class="section-features" id="feature">
         <div class="row">
             <h2>Get Food Fast - Not Fast Food</h2>
             <p class="long-copy">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat nam voluptatem
@@ -85,7 +87,7 @@
 
     </section>
 
-    <section class="section-meals">
+    <section class="section-meals" data-aos="fade-in" data-aos-duration="2000">
         <ul class="meals-showcase clearfix">
             <li>
                 <figure class="meal-photo">
@@ -140,13 +142,13 @@
         </ul>
     </section>
 
-    <section class="section-steps">
+    <section class="section-steps" id="hiw" data-aos="fade-in" data-aos-duration="4000">
         <div class="row">
             <h2>How it works &mdash; Simple as 1,2,3</h2>
         </div>
         <div class="row">
             <div class="col span_1_of_2 steps-box">
-                <img src="./resources/img/phone-landing-page.png" alt="phone-image" class="app-screen">
+                <img data-aos="slide-left" data-aos-duration="1000" src="./resources/img/phone-landing-page.png" alt="phone-image" class="app-screen">
             </div>
             <div class="col span_1_of_2 steps-box">
                 <div class="works-step">
@@ -169,7 +171,7 @@
         </div>
     </section>
 
-    <section class="section-cities">
+    <section class="section-cities" id="city" data-aos="fade-in" data-aos-duration="2000">
         <div class="row">
             <h2>We're currently in these cities.</h2>
         </div>
@@ -245,7 +247,7 @@
         </div>
     </section>
 
-    <section class="section-testimonials">
+    <section class="section-testimonials" data-aos="fade-in" data-aos-duration="2000">
         <div class="row">
             <h2>Our can not live with out us.</h2>
         </div>
@@ -286,14 +288,14 @@
         </div>
     </section>
 
-    <section class="section-plans">
+    <section class="section-plans" id="plans" data-aos="fade-in" data-aos-duration="2000">
         <div class="row">
             <h2>Start eating healthy today.</h2>
         </div>
         <div class="row">
             <div class="col span_1_of_3">
                 <div class="plan-box">
-                    <div>
+                    <div data-aos="zoom-in" data-aos-duration="2000">
                         <h3>Premium</h3>
                         <p class="plan-price">$499 <span>/ month</span></p>
                         <p class="plan-price-meal">Thats only 13.90$ per meal.</p>
@@ -352,7 +354,7 @@
         </div>
     </section>
 
-    <section class="section-form">
+    <section class="section-form" id="signup" data-aos="fade-in" data-aos-duration="2000">
         <div class="row">
             <h2>We're happy to hear from you</h2>
         </div>
@@ -416,7 +418,70 @@
         </div>
     </section>
 
+
+    <!-- <footer>
+        <div class="row">
+            <div class="col span_1_of_2">
+                <ul class="footer-nav">
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">IOS App</a></li>
+                    <li><a href="#">Android app</a></li>
+                </ul>
+            </div>
+            <div class="col span_1_of_2">
+                <ul class="social-links">
+                    <li><ion-icon class="fb" name="logo-facebook"></ion-icon></li>
+                    <li><ion-icon class="twitter" name="logo-twitter"></ion-icon></li>
+                    <li><ion-icon class="google" name="logo-google"></ion-icon></li>
+                    <li><ion-icon class="insta" name="logo-instagram"></ion-icon></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <p>Copyright &copy; 2025 by myfood.All rights reserved.</p>
+        </div>
+    </footer> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+
+    <!-- aos -->
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+
+    <!-- jquery -->
+
+    <script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
 </body>
 
 </html>
